@@ -1,49 +1,42 @@
 /* -------------------- CSS BY NAME -------------------------------------- */
-
 /* -------------------- IMPORTED FONTS -------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/*-------------------- CSS RESET ---------------------------------------------------*/
+/* -------------------- CSS RESET -------------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* -------------------- ROOT VARIABLES --------------------------------------- */
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* -------------------- ROOT VARIABLES -------------------------------------- */
 :root {
     --primary-color: #E44D26;
-    --secondary-color: #333;
-    --background-color: #f5f5f5;
-    --text-color: #222;
-    --font-family: 'Montserrat', sans-serif;
+    --secondary-color: #222;
+    --text-color: #333;
+    --light-bg: #91c7b1;
 }
 
-/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
-body {
-    font-family: var(--font-family);
-    background: var(--background-color);
-    color: var(--text-color);
-}
-
-/* -------------------- HEADER STYLES -------------------- */
+/* -------------------- GLOBAL STYLES (Mobile First) -------------------- */
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background: white;
     padding: 15px 20px;
-}
-
-.logo h1 {
-    font-size: 24px;
-    color: var(--primary-color);
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 20px;
+    align-items: center;
 }
 
 nav ul li {
@@ -56,8 +49,8 @@ nav ul li {
 }
 
 nav ul li img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -74,18 +67,20 @@ nav ul li img {
 }
 
 .search-bar input {
-    width: 300px;
-    padding: 10px;
+    width: 320px;
+    padding: 12px;
     border: 2px solid var(--primary-color);
     border-radius: 5px 0 0 5px;
+    font-size: 16px;
 }
 
 .search-bar button {
     background: var(--primary-color);
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
 
 /* -------------------- RECIPE SECTION -------------------- */
@@ -99,47 +94,51 @@ nav ul li img {
     color: var(--text-color);
 }
 
+/* -------------------- RECIPE CONTENT -------------------- */
 .recipe-content {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .recipe-content img {
-    width: 400px;
+    width: 450px;
     border-radius: 5px;
 }
 
 .recipe-content article {
-    max-width: 400px;
+    max-width: 450px;
     text-align: left;
+    font-size: 18px;
 }
 
-/* -------------------- RECIPE ACTIONS -------------------- */
+/* -------------------- SIDE NAVIGATION -------------------- */
 .recipe-actions {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 15px;
-    padding: 20px;
 }
 
 .recipe-actions button {
     background: none;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
-    padding: 10px 15px;
+    padding: 10px;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-.recipe-actions button i {
-    margin-right: 5px;
-}
-
-/* -------------------- DETAILS -------------------- */
+/* -------------------- DETAILS SECTION -------------------- */
 .details {
     display: flex;
     justify-content: space-around;
@@ -150,55 +149,62 @@ nav ul li img {
 }
 
 .detail-item {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* -------------------- INGREDIENTS & DIRECTIONS -------------------- */
 .ingredients, .directions {
-    padding: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .ingredients h3, .directions h3 {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .ingredients ul {
     list-style: none;
-    padding-left: 15px;
-}
-
-.ingredients ul li {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.directions ol {
     padding-left: 20px;
 }
 
+.ingredients ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.directions ol {
+    padding-left: 25px;
+}
+
 .directions ol li {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 12px;
 }
 
 /* -------------------- SIDE DISHES -------------------- */
 .side-dishes {
-    background: #91c7b1;
-    padding: 20px;
+    background: var(--light-bg);
+    padding: 40px 20px;
     text-align: center;
 }
 
 .side-dishes h3 {
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.side-dish-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .side-dish {
-    display: inline-block;
-    width: 200px;
+    width: 220px;
     text-align: center;
-    margin: 10px;
 }
 
 .side-dish img {
@@ -208,7 +214,8 @@ nav ul li img {
 
 .side-dish p {
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 /* -------------------- FOOTER -------------------- */
@@ -216,16 +223,16 @@ footer {
     background: var(--secondary-color);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 footer img {
-    width: 80px;
+    width: 90px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
 footer .social i {
     margin: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
