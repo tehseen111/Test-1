@@ -1,126 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Street Tacos Recipe</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Tacos Recipe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Replaced FontAwesome kit with a working CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pXQwxxSZNAY8HzU3Gj5RAt5G1IfA8G4Rv3+RzG0kH+F8hO6/28POCde0xTQZ3I4HQ0H7/TP6mVYv5vnqk9if/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <h1>🍴4</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><img src="./images/breakfast.jpg" alt="Breakfast">BREAKFAST</li>
-                <li><img src="./images/brunch.jpg" alt="Brunch">BRUNCH</li>
-                <li><img src="./images/lunch.jpg" alt="Lunch">LUNCH</li>
-                <li><img src="./images/dinner.jpg" alt="Dinner">DINNER</li>
-                <li><img src="./images/appetizers.jpg" alt="Appetizers">APPETIZERS</li>
-                <li><img src="./images/desserts.jpg" alt="Desserts">DESSERTS</li>
-                <li><img src="./images/beverages.jpg" alt="Beverages">BEVERAGES</li>
-            </ul>
-        </nav>
-        <div class="sign-in">
-            <i class="fas fa-user"></i> SIGN IN
-        </div>
-    </header>
+  <header>
+    <a href="svgs.html">
+      <img src="svgs.html/logo.svg" alt="Brand Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><img src="images/breakfast.png" alt="Breakfast">BREAKFAST</li>
+        <li><img src="images/brunch.png" alt="Brunch">BRUNCH</li>
+        <li><img src="images/lunch.png" alt="Lunch">LUNCH</li>
+        <li><img src="images/dinner.png" alt="Dinner">DINNER</li>
+        <li><img src="images/appetizers.png" alt="Appetizers">APPETIZERS</li>
+        <li><img src="images/desserts.png" alt="Desserts">DESSERTS</li>
+        <li><img src="images/beverages.png" alt="Beverages">BEVERAGES</li>
+      </ul>
+    </nav>
+    <div class="sign-in">
+      <i class="fas fa-user"></i> <span>SIGN IN</span>
+    </div>
+  </header>
 
-    <section class="search-bar">
-        <input type="text" placeholder="Find a recipe">
-        <button><i class="fas fa-search"></i></button>
+  <section class="search-bar">
+    <input type="text" placeholder="Find a recipe">
+    <button><i class="fas fa-search"></i></button>
+  </section>
+
+  <main>
+    <section class="recipe">
+      <h2>STREET TACOS</h2>
+      <div class="recipe-content">
+        <img src="images/street-tacos.png" alt="Street Tacos">
+        <article>
+          <p>Street tacos are delicious, amazing, and oh so mouthwatering! Bite into tender steak, zesty lime flavor with a hint of spice and add on tomatoes, avocado, and onions for a savory bite you are going to love!</p>
+          <p>These street tacos are completely jam-packed with flavor and they are so easy to make. I love how the meat is so tender and juicy and only takes an hour to marinate! If you absolutely love tacos like me, try out these other amazing taco recipes! These taco-stuffed avocados, Baja fish tacos, and ground beef tacos will not disappoint!!</p>
+        </article>
+      </div>
     </section>
 
-    <main>
-        <section class="recipe">
-            <h2>STREET TACOS</h2>
-            <div class="recipe-content">
-                <img src="./images/street-tacos.jpg" alt="Street Tacos">
-                <article>
-                    <p>Street tacos are delicious, amazing, and oh so mouthwatering! ...</p>
-                </article>
-            </div>
-        </section>
+    <aside class="recipe-actions">
+      <button><i class="fas fa-save"></i> SAVE</button>
+      <button><i class="fas fa-share"></i> SHARE</button>
+      <button><i class="fas fa-print"></i> PRINT</button>
+      <button><i class="fas fa-arrow-down"></i> JUMP</button>
+    </aside>
 
-        <aside class="recipe-actions">
-            <button><i class="fas fa-save"></i> SAVE</button>
-            <button><i class="fas fa-share"></i> SHARE</button>
-            <button><i class="fas fa-print"></i> PRINT</button>
-            <button><i class="fas fa-arrow-down"></i> JUMP</button>
-        </aside>
+    <section class="details">
+      <div class="detail-item"><strong>Prep Time</strong> 10 minutes</div>
+      <div class="detail-item"><strong>Cook Time</strong> 10 minutes</div>
+      <div class="detail-item"><strong>Total Time</strong> 20 minutes</div>
+      <div class="detail-item"><strong>Author</strong> Taco Cheesington</div>
+      <div class="detail-item"><strong>Servings</strong> 6 tacos</div>
+    </section>
 
-        <section class="details">
-            <div class="detail-item"><strong>Prep Time</strong> 10 minutes</div>
-            <div class="detail-item"><strong>Cook Time</strong> 10 minutes</div>
-            <div class="detail-item"><strong>Total Time</strong> 20 minutes</div>
-            <div class="detail-item"><strong>Author</strong> Taco Cheesington</div>
-            <div class="detail-item"><strong>Servings</strong> 6 tacos</div>
-        </section>
+    <section class="ingredients">
+      <h3>INGREDIENTS</h3>
+      <ul>
+        <li>Flank steak</li>
+        <li>Soy Sauce</li>
+        <li>Worcestershire sauce</li>
+        <li>Lime</li>
+        <li>Minced garlic</li>
+        <li>Cilantro</li>
+        <li>Chili powder</li>
+        <li>Cumin</li>
+        <li>Salt</li>
+        <li>Pepper</li>
+        <li>Corn tortillas</li>
+      </ul>
+    </section>
 
-        <section class="ingredients">
-            <h3>INGREDIENTS</h3>
-            <ul>
-                <li>Flank steak</li>
-                <li>Soy Sauce</li>
-                <li>Worcestershire sauce</li>
-                <li>Lime</li>
-                <li>Minced garlic</li>
-                <li>Cilantro</li>
-                <li>Chili powder</li>
-                <li>Cumin</li>
-                <li>Salt</li>
-                <li>Pepper</li>
-                <li>Corn tortillas</li>
-            </ul>
-        </section>
+    <section class="directions">
+      <h3>DIRECTIONS</h3>
+      <ol>
+        <li>Cut and mix: Cut the flank steak into one-inch pieces...</li>
+        <li>Marinate: Add the steak and let marinate in the fridge for 1-2 hours.</li>
+        <li>Cook the meat: Heat a medium-sized skillet to medium-high heat...</li>
+        <li>Add toppings: Put the steak in the center of your tortilla...</li>
+      </ol>
+    </section>
 
-        <section class="directions">
-            <h3>DIRECTIONS</h3>
-            <ol>
-                <li>Cut and mix: Cut the flank steak into one-inch pieces...</li>
-                <li>Marinate: Add the steak and let marinate in the fridge for 1-2 hours.</li>
-                <li>Cook the meat: Heat a medium-sized skillet to medium-high heat...</li>
-                <li>Add toppings: Put the steak in the center of your tortilla...</li>
-            </ol>
-        </section>
+    <div class="side-dish-container">
+      <div class="side-dish">
+        <img src="images/mexican-rice.png" alt="Mexican Rice">
+        <h3>Mexican Rice</h3>
+        <p>Traditional recipe with a twist.</p>
+        <p>Rating ⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="side-dish">
+        <img src="images/salsa.png" alt="Salsa">
+        <h3>Salsa</h3>
+        <p>Just the right amount of spice.</p>
+        <p>Rating ⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="side-dish">
+        <img src="images/guacamole.png" alt="Guacamole">
+        <h3>Guacamole</h3>
+        <p>Fresh and healthy.</p>
+        <p>Rating ⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="side-dish">
+        <img src="images/tortillas.png" alt="Tortillas">
+        <h3>Tortillas</h3>
+        <p>Easy to make and so good.</p>
+        <p>Rating ⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    
+  </main>
 
-        <section class="side-dishes">
-            <h3>NEED SOME SIDE DISHES?</h3>
-            <div class="side-dish">
-                <img src="./images/mexican-rice.jpg" alt="Mexican Rice">
-                <p>MEXICAN RICE</p>
-            </div>
-            <div class="side-dish">
-                <img src="./images/salsa.jpg" alt="Salsa">
-                <p>SALSA</p>
-            </div>
-            <div class="side-dish">
-                <img src="./images/guacamole.jpg" alt="Guacamole">
-                <p>GUACAMOLE</p>
-            </div>
-            <div class="side-dish">
-                <img src="./images/tortillas.jpg" alt="Tortillas">
-                <p>TORTILLAS</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <img src="./images/taco-cheesington.jpg" alt="Taco Cheesington">
-        <p>COPYRIGHT 2022 TACO CHEESINGTON</p>
-        <div class="social">
-            <i class="fab fa-facebook"></i> FACEBOOK
-            <i class="fab fa-instagram"></i> INSTAGRAM
-            <i class="fab fa-youtube"></i> YOUTUBE
-            <i class="fab fa-tiktok"></i> TIK TOK
-        </div>
-    </footer>
+  <footer>
+    <img src="images/taco-cheesington.png" alt="Taco Cheesington">
+    <p>COPYRIGHT 2022 TACO CHEESINGTON</p>
+    <div class="social">
+      <i class="fab fa-facebook"></i> FACEBOOK
+      <i class="fab fa-instagram"></i> INSTAGRAM
+      <i class="fab fa-youtube"></i> YOUTUBE
+      <i class="fab fa-tiktok"></i> TIK TOK
+    </div>
+  </footer>
 
 </body>
 </html>
